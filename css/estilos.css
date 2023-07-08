@@ -1,0 +1,274 @@
+/*INICIO*/
+* {
+	margin: 0;
+	border: 0;
+    padding: 0;
+}
+body {
+	background-color: black;
+}
+#container {
+	width: 100%;
+	margin: 0px auto;
+}
+
+/*HEADER*/
+.cabeza {
+	background-color: rgb(133, 138, 139);
+	border-radius: 5px;
+	width: 100%;
+	display: table;
+}
+.logo{
+	width: 215px;
+	border-radius: 10px;
+	padding: 1px;
+}
+.cabeza nav{
+	display: flex;
+	justify-content: space-around;
+	box-shadow: inset 0 0 2px #444444;
+
+}
+.cabeza nav ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+nav ul a{
+	text-decoration: none;
+	font-size: 20px;
+	color: whitesmoke;
+	padding: 20px 20px;
+	display: block;
+}
+
+.cabeza a:hover{
+	background-color: rgb(59, 53, 53);
+	border-radius: 10px;
+}
+
+
+
+/*IMAGEN DE MENU*/
+.menu{
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+
+/*BANNER IMAGEN*/
+header img {
+	width: 100%;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;	
+}
+/*NAV COLOR DE FONDO*/
+nav {
+	background-color: rgb(245, 100, 100);
+	padding: 1px;
+}
+/*NAV LETRAS*/
+nav a {
+	text-decoration: none;
+	color: black;	
+}
+.submenu ul li{
+	color: whitesmoke;
+	display: inline-flex;
+	margin-left: 20px;
+}
+
+/*MAIN*/
+main {
+	display: flex;
+}
+
+/*ASIDE DONDE ESTAN LAS CAJAS DESPEGABLES*/
+aside {
+	width: 24%;
+	padding: 20px;
+	background-color: white;
+	border: #000 0px solid;
+	box-shadow: inset 0 0 3px #444444;
+
+}
+aside ul h2{
+	text-align: center;
+	background-color: whitesmoke;
+	color: rgb(245, 100, 100);
+	box-shadow: inset 0 0 5px #444444;
+}
+
+/*SECTION*/
+section {
+	width: 100%;
+	padding: 7px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: white;
+	box-shadow: inset 0 0 4px #444444;
+}
+/*SECTION FIGURAS*/
+section figure {
+	width: 30%;
+	flex-wrap: wrap;
+	margin: 10px;
+	margin-left: auto;
+    margin-right: auto;
+	box-shadow: inset 0 0 8px #444444;
+	border-radius: 2px;
+
+}
+/*IMAGENES*/
+section figure img {
+	width: 85%;
+	margin: 10px auto;
+	display: block;
+	border: 1px black solid;
+    height: 75%;
+	border-radius: 5px;
+
+}
+
+/*LETRAS DE CADA IMAGEN*/
+section figure figcaption {
+	margin: 8px;
+	text-align: center;
+	color: rgb(88, 87, 87);
+}
+.comprar a{
+	color: rgb(235, 235, 17);
+	text-decoration: none;
+	box-shadow: inset 0 0 100px rgb(248, 0, 0);
+	font-weight: bolder;
+	border-radius: 4px;
+}
+
+
+/*FOOTER*/
+.containerr{
+	max-width: 1170px;
+	margin: auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: rgb(243, 96, 96);
+	padding: 70px 0;
+}
+.footer a{
+	text-decoration: none;
+	font-size: 17px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+
+}
+.columna{
+	width: 25%;
+	padding: 0 30px;
+}
+.columna h4{
+	font-size: 20px;
+	color: rgb(32, 31, 31);
+	text-transform: capitalize;
+	margin-bottom: 30px;
+	position: relative;
+	font-weight: 500;
+}
+.columna h4::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.columna ul li:not(:last-child){
+	margin-bottom: 11px;
+}
+.columna .redes-sociales{
+	width: 10px;
+}
+.final{
+	text-align: center;
+	background-color: rgb(243, 96, 96);
+	color: white;
+}
+
+
+
+
+/*INTERFAZ DE LAS CAJAS DESPEGABLES*/
+ul.acorh,
+ul.acorh * {
+margin: 0;
+padding: 0;
+border: 0;
+}
+ul.acorh {
+margin: 10px auto;
+padding: 0;
+list-style: none;
+width: 100%;
+font-size: 18px;
+}
+
+ul.acorh li {
+list-style: none;
+}
+
+ul.acorh li a {
+display: block;
+padding: 10px 10px 10px 20px;
+background: #333;
+color: #eee;
+border-bottom: 1px solid #000;
+border-top: 1px solid #666;
+text-decoration: none;
+box-sizing: border-box;
+}
+
+ul.acorh li ul {
+max-height: 0;
+margin: 0;
+padding: 0;
+list-style: none;
+overflow: hidden;
+transition: .3s all ease-in;
+}
+
+ul.acorh li li a {
+padding: 10px 10px 10px 40px;
+background: #999;
+color: #000;
+font-size: 16px;
+border: 0;
+border-bottom: 1px solid #ccc;
+box-sizing: border-box;
+}
+ul.acorc li li:last-child a {
+border-bottom: 0;
+}
+ul.acorh li:hover ul {
+max-height: 300px;
+transition: .3s all ease-in;
+}
+
+/*COLOR DE LETRA Y DE FONDO*/
+ul.acorh li a:hover {
+background: rgb(245, 68, 68);
+color: whitesmoke;
+}
